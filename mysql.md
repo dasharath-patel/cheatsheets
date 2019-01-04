@@ -18,6 +18,10 @@ ALTER DATABASE dbNameYouWant CHARACTER SET utf8
 
 ```bash
 mysqldump -u Username -p dbNameYouWant > databasename_backup.sql
+
+for gunzip
+
+mysqldump -u user -p[user_password] [database_name] | gzip > dumpfilename.sql.gz
 ```
 
 ### Restore from backup SQL File
